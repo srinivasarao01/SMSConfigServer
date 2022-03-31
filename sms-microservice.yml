@@ -1,0 +1,16 @@
+server:
+  port: 9090
+  
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/sms
+    username: postgres
+    password: postgres
+      
+  jpa:
+    show-sql: true
+    generate-ddl: false
+    
+    hibernate:
+      ddl-auto: update
