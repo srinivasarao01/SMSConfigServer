@@ -1,3 +1,4 @@
+---
 server:
   port: 9898
   
@@ -14,7 +15,48 @@ spring:
     
     hibernate:
       ddl-auto: update
-
+      
+  config:
+    activate:
+      on-profile:
+      - DEV
+      
+      
 student:
   school-name: APS
-  school-location: KASHMIR      
+  school-location: KASHMIR 
+...  
+---
+server:
+  port: 9797
+  
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      defaultZon: http://localhost:8761/ 
+  
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/sms
+    username: postgres
+    password: postgres
+      
+  jpa:
+    show-sql: true
+    generate-ddl: false
+    
+    hibernate:
+      ddl-auto: update
+      
+  config:
+    activate:
+      on-profile:
+      - QA
+
+student:
+  school-name: KV
+  school-location: HYDERABAD
+...     
