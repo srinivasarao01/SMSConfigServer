@@ -16,5 +16,5 @@ spring:
       ddl-auto: update
 
 student:
-  school-name: KV1
-  school-location: HYDADDR1      
+  school-name: DPS
+  school-location: DELHI      
