@@ -1,7 +1,4 @@
 ---
-server:
-  port: 9898
-
 eureka:
   client:
     register-with-eureka: true
@@ -33,10 +30,7 @@ student:
   school-name: APS
   school-location: KASHMIR 
 ...  
----
-server:
-  port: 9797
-  
+--- 
 eureka:
   client:
     register-with-eureka: true
