@@ -3,7 +3,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:8761/   
+      defaultZon: http://localhost:8761/eureka      
   
 spring:
   datasource:
