@@ -18,13 +18,7 @@ spring:
     
     hibernate:
       ddl-auto: update
-      
-  config:
-    activate:
-      on-profile:
-      - DEV
-      
-      
+            
 student:
   school-name: APS
   school-location: KASHMIR 
